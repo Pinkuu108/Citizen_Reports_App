@@ -13,21 +13,11 @@
 	crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
-	<h3>Welcome To Power House</h3>
-	<h4>Hii</h4>
-	<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-  <label class="form-check-label" for="checkDefault">
-    Male
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
-  <label class="form-check-label" for="checkChecked">
-    Fe-Male
-  </label>
-</div>
+	<div class="container">
+		<h3>Welcome To Power House</h3>
+		<h4>Hii</h4>
+
+	</div>
 	<button class="btn btn-danger">Search</button>
 	</div>
 	<script
