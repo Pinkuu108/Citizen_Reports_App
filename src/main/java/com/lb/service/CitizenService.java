@@ -11,7 +11,7 @@ public interface CitizenService {
 
 	public List<String> getPlanName();
 
-	public List<CitizenReports> Seach(SearchRequest search);
+	public List<CitizenReports> Search (SearchRequest search);
 
 	public boolean exportExcel();
 
