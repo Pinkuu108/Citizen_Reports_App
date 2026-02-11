@@ -9,7 +9,7 @@ import com.lb.entity.CitizenReports;
 
 public interface CitizenRepo extends JpaRepository<CitizenReports, Integer> {
 
-	@Query("select distinct c.citizenName from CitizenReports c")
+	@Query("select distinct c.planName from CitizenReports c")
 	List<String> getCitizenName();
 
 	@Query("select distinct c.citizenStatus from CitizenReports c")
