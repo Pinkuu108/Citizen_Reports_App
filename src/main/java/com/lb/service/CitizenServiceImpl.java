@@ -2,12 +2,15 @@ package com.lb.service;
 
 import java.util.List;
 
+import org.springframework.beans.BeanUtils;
+import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
 import com.lb.entity.CitizenReports;
 import com.lb.repo.CitizenRepo;
 import com.lb.search.SearchRequest;
 
+import ch.qos.logback.core.joran.util.beans.BeanUtil;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -27,9 +30,19 @@ public class CitizenServiceImpl implements CitizenService {
 	}
 
 	@Override
-	public List<CitizenReports> Search(SearchRequest search) {
-		
-		return citizenRepo.findAll();
+	public List<CitizenReports> Search(SearchRequest request) {
+		CitizenReports entity = new CitizenReports();
+//		BeanUtils.copyProperties(search, report);
+		if (null != request.getPlanName() && !"".equals(request.getPlanName())) {
+			entity.setPlanName(request.getPlanName());
+		}
+		if (null != request.getCitizenStatus() && !"".equals(request.getCitizenStatus())) {
+			entity.setCitizenStatus(request.getCitizenStatus());
+		}
+		if (null != request.getGender() && !"".equals(request.getGender())) {
+			entity.setGender(request.getGender());
+		}
+		return citizenRepo.findAll(Example.of(entity));
 	}
 
 	@Override

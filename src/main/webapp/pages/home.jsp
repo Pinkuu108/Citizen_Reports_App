@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +68,7 @@
 				<div class="col-md-3">
 					<label class="form-label">End Date</label>
 					<form:input path="endDate" type="date" cssClass="form-control" />
-				</div>
+				</div> 
 
 			</div>
 
@@ -80,7 +80,7 @@
 			<hr>
 
 
-			<table class="table table-striped">
+			<table class="table table-striped table-hover">
 
 				<thead>
 					<tr>
@@ -91,8 +91,26 @@
 						<th>Gender</th>
 						<th>Start_Date</th>
 						<th>End_Date</th>
+						<th>BenefitAmount</th>
 					</tr>
 				</thead>
+				<tbody>
+					<c:forEach items="${plans}" var="plan" varStatus="index">
+						<tr>
+							<td>${index.count}</td>
+							<td>${plan.citizenName}</td>
+							<td>${plan.planName}</td>
+							<td>${plan.citizenStatus}</td>
+							<td>${plan.gender}</td>
+							<td>${plan.startDate}</td>
+							<td>${plan.endDate}</td>
+							<td>${plan.benefitAmount}</td>
+							
+
+                               
+						</tr>
+					</c:forEach>
+				</tbody>
 			</table>
 
 			<hr>
