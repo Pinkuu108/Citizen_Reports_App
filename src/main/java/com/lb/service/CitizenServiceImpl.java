@@ -28,8 +28,8 @@ public class CitizenServiceImpl implements CitizenService {
 
 	@Override
 	public List<CitizenReports> Search(SearchRequest search) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return citizenRepo.findAll();
 	}
 
 	@Override

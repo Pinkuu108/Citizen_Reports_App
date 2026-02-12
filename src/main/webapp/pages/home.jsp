@@ -1,94 +1,112 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Reports App</title>
+<meta charset="UTF-8">
+<title>Reports App</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+	rel="stylesheet">
 </head>
 
 <body>
 
-<div class="container mt-4">
+	<div class="container mt-4">
 
-    <h3 class="mb-4">Welcome To Reports Application</h3>
+		<h3 class="mb-4">Welcome To Reports Application</h3>
 
-    <!-- ✅ Spring Form START -->
-    <form:form action="search" modelAttribute="search" method="POST">
+		<!-- ✅ Spring Form START -->
+		<form:form action="search" modelAttribute="search" method="POST">
 
-        <div class="row mb-3">
+			<div class="row mb-3">
 
-            <!-- Plan Name -->
-            <div class="col-md-3">
-                <label class="form-label">Plan Name</label>
-                <form:select path="planName" cssClass="form-select">
-                    <form:option value="">-- Select --</form:option>
-                    <form:options items="${names}"></form:options>
-                </form:select>
-            </div>
+				<!-- Plan Name -->
+				<div class="col-md-3">
+					<label class="form-label">Plan Name</label>
+					<form:select path="planName" cssClass="form-select">
+						<form:option value="">-- Select --</form:option>
+						<form:options items="${names}"></form:options>
+					</form:select>
+				</div>
 
-            <!-- Gender -->
-            <div class="col-md-3">
-                <label class="form-label">Gender</label>
-                <form:select path="gender" cssClass="form-select">
-                    <form:option value="">-- Select --</form:option>
-                    <form:option value="Male">Male</form:option>
-                    <form:option value="Female">Female</form:option>
-                </form:select>
-            </div>
+				<!-- Gender -->
+				<div class="col-md-3">
+					<label class="form-label">Gender</label>
+					<form:select path="gender" cssClass="form-select">
+						<form:option value="">-- Select --</form:option>
+						<form:option value="Male">Male</form:option>
+						<form:option value="Female">Female</form:option>
+					</form:select>
+				</div>
 
-            <!-- Plan Status -->
-            <div class="col-md-3">
-                <label class="form-label">Plan Status</label>
-                <form:select path="citizenStatus" cssClass="form-select">
-                    <form:option value="">-- Select --</form:option>
-                    <form:options items="${status}"></form:options>
-                </form:select>
-            </div>
+				<!-- Plan Status -->
+				<div class="col-md-3">
+					<label class="form-label">Plan Status</label>
+					<form:select path="citizenStatus" cssClass="form-select">
+						<form:option value="">-- Select --</form:option>
+						<form:options items="${status}"></form:options>
+					</form:select>
+				</div>
 
-        </div>
+			</div>
 
-        <div class="row mb-3">
+			<div class="row mb-3">
 
-            <!-- Start Date -->
-            <div class="col-md-3">
-                <label class="form-label">Start Date</label>
-                <form:input path="startDate" type="date" cssClass="form-control"/>
-            </div>
+				<!-- Start Date -->
+				<div class="col-md-3">
+					<label class="form-label">Start Date</label>
+					<form:input path="startDate" type="date" cssClass="form-control" />
+				</div>
 
-            <!-- End Date -->
-            <div class="col-md-3">
-                <label class="form-label">End Date</label>
-                <form:input path="endDate" type="date" cssClass="form-control"/>
-            </div>
+				<!-- End Date -->
+				<div class="col-md-3">
+					<label class="form-label">End Date</label>
+					<form:input path="endDate" type="date" cssClass="form-control" />
+				</div>
 
-        </div>
+			</div>
 
-        <!-- Button -->
-        <div class="mb-3">
-            <input type="submit" value="Search" class="btn btn-primary"/>
-            <input type="reset" value="Reset" class="btn btn-secondary"/>
-        </div>
-        <hr>
-        
-        
-        <hr>
-       Expert:  <a href="">Excel</a> <a href="">pdf</a>
+			<!-- Button -->
+			<div class="mb-3">
+				<input type="submit" value="Search" class="btn btn-primary" /> <input
+					type="reset" value="Reset" class="btn btn-secondary" />
+			</div>
+			<hr>
 
-    </form:form>
-    <!-- ✅ Spring Form END -->
 
-</div>
+			<table class="table table-striped">
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>citizenName</th>
+						<th>Plan_Name</th>
+						<th>Status</th>
+						<th>Gender</th>
+						<th>Start_Date</th>
+						<th>End_Date</th>
+					</tr>
+				</thead>
+			</table>
+
+			<hr>
+       Expert:  <a href="">Excel</a>
+			<a href="">pdf</a>
+
+		</form:form>
+		<!-- ✅ Spring Form END -->
+
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

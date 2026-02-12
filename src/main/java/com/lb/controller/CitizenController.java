@@ -1,11 +1,14 @@
 package com.lb.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.lb.entity.CitizenReports;
 import com.lb.repo.CitizenRepo;
 import com.lb.search.SearchRequest;
 import com.lb.service.CitizenService;
@@ -25,6 +28,8 @@ public class CitizenController {
 	@PostMapping("/search")
 	public String getSearch(SearchRequest request, Model model) {
 		System.out.println(request);
+		List<CitizenReports> plan = service.Search(request);
+		model.addAttribute("plans", plan);
 		init(model);
 		return "home";
 	}
@@ -32,7 +37,6 @@ public class CitizenController {
 	@GetMapping("/")
 	public String getHome(Model model) {
 
-		
 		init(model);
 
 		return "home";

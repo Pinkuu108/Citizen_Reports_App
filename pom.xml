@@ -58,8 +58,21 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        
+           <dependency>
+    <groupId>jakarta.servlet.jsp.jstl</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+</dependency>
 
-        <!-- DevTools -->
+<dependency>
+    <groupId>org.glassfish.web</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+</dependency>
+
+
+
+
+		<!-- DevTools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -67,7 +80,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- Test -->
+		<!-- Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -84,7 +97,7 @@
     <build>
         <plugins>
 
-            <!-- Compiler Plugin (Java 17 + Lombok Annotation Processor) -->
+			<!-- Compiler Plugin (Java 17 + Lombok Annotation Processor) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -102,7 +115,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Spring Boot Plugin -->
+			<!-- Spring Boot Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
