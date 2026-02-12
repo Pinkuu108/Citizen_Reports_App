@@ -68,14 +68,15 @@
 				<div class="col-md-3">
 					<label class="form-label">End Date</label>
 					<form:input path="endDate" type="date" cssClass="form-control" />
-				</div> 
+				</div>
 
 			</div>
 
 			<!-- Button -->
-			<div class="mb-3">
-				<input type="submit" value="Search" class="btn btn-primary" /> <input
-					type="reset" value="Reset" class="btn btn-secondary" />
+			<div class="mb-3"  >
+				<input type="submit" value="Search" class="btn btn-primary" /> <a
+					href="/" class="btn btn-secondary">Reset</a>
+
 			</div>
 			<hr>
 
@@ -105,11 +106,14 @@
 							<td>${plan.startDate}</td>
 							<td>${plan.endDate}</td>
 							<td>${plan.benefitAmount}</td>
-							
-
-                               
 						</tr>
 					</c:forEach>
+					<tr>
+						<c:if test="${empty plans}">
+							<td colspan="8" style="text-align: center;">No Record's
+								Found</td>
+						</c:if>
+					</tr>
 				</tbody>
 			</table>
 

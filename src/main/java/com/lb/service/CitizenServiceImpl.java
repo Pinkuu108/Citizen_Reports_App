@@ -42,6 +42,14 @@ public class CitizenServiceImpl implements CitizenService {
 		if (null != request.getGender() && !"".equals(request.getGender())) {
 			entity.setGender(request.getGender());
 		}
+		if (null != request.getStartDate() && !"".equals(request.getStartDate())) {
+
+			entity.setStartDate(request.getStartDate());
+		}
+		if (null != request.getEndDate() && !"".equals(request.getEndDate())) {
+
+			entity.setEndDate(request.getEndDate());
+		}
 		return citizenRepo.findAll(Example.of(entity));
 	}
 

@@ -15,9 +15,9 @@ public class SearchRequest {
 
 	private String citizenStatus;
 
-	@DateTimeFormat(pattern = "dd-mm-yyyy")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate startDate;
-	@DateTimeFormat(pattern = "dd-mm-yyyy")
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate endDate;
 
 }
