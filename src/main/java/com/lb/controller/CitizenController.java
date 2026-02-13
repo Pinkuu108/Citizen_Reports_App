@@ -14,6 +14,8 @@ import com.lb.repo.CitizenRepo;
 import com.lb.search.SearchRequest;
 import com.lb.service.CitizenService;
 
+import jakarta.servlet.http.HttpServletResponse;
+
 @Controller
 public class CitizenController {
 
@@ -26,8 +28,21 @@ public class CitizenController {
 		this.citizenRepo = citizenRepo;
 	}
 
+	@GetMapping("/excel")
+	public void exportexcel(HttpServletResponse response) throws Exception {
+		response.setContentType("application/octet-stream");
+		response.addHeader("Content-Disposition", "attachment;filename=plans.xls");
+		service.exportExcel(response);
+	}
+	@GetMapping("/pdf")
+	public void exportpdf(HttpServletResponse response) throws Exception {
+		response.setContentType("application/pdf");
+		response.addHeader("Content-Disposition", "attachment;filename=plans.pdf");
+		service.exportPdf(response);
+	}
+
 	@PostMapping("/search")
-	public String getSearch(@ModelAttribute("search")  SearchRequest search, Model model) {
+	public String getSearch(@ModelAttribute("search") SearchRequest search, Model model) {
 		System.out.println(search);
 		List<CitizenReports> plan = service.Search(search);
 		model.addAttribute("plans", plan);
@@ -44,7 +59,7 @@ public class CitizenController {
 	}
 
 	private void init(Model model) {
-		
+
 		model.addAttribute("names", service.getPlanName());
 		model.addAttribute("status", service.getPlanStatus());
 	}
