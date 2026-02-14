@@ -101,10 +101,12 @@ This project demonstrates:
 
 ---
 
-## 👨‍💻 Author
+---
 
-Pinku
-Java & Spring Boot Developer
+## 👨‍💻 Author  
 
-```
-```
+**Pinku**  
+Java Developer  
+
+🔗 **LinkedIn:** https://www.linkedin.com/in/pinkuna-prusty-55b487273/  
+📧 **Email:** pinkunaprusty108@gmail.com
