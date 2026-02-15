@@ -42,15 +42,18 @@ View Layer
 
 📂 Project Structure
 
-Reports_App/  
-│  
-├── controller/  
-├── service/  
-├── repository/  
-├── entity/  
-├── search/  
-├── util/  
-└── runner/  
+Problems are organized by layer:
+
+Reports_App/
+│
+├── controller/
+├── service/
+├── repository/
+├── entity/
+├── search/
+├── util/
+└── runner/
+
 
 ------------------------------------------------------------
 
