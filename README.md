@@ -44,6 +44,7 @@ View Layer
 
 Problems are organized by layer:
 
+```
 Reports_App/
 │
 ├── controller/
@@ -53,7 +54,7 @@ Reports_App/
 ├── search/
 ├── util/
 └── runner/
-
+```
 ------------------------------------------------------------
 
 ⚙️ Application Workflow
