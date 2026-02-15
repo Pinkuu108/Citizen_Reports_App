@@ -76,38 +76,47 @@ Runner Class → Database Initialization → Dropdown Values from DB → User Se
 
 ------------------------------------------------------------
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 
-1️⃣ Clone Repository  
+### 1️⃣ Clone Repository
 
+```
 git clone <your_repo_url>
+```
 
-2️⃣ Open Project  
+### 2️⃣ Open Project
 
-Import into IntelliJ IDEA / Eclipse / Spring Tool Suite
+Import into **IntelliJ IDEA / Eclipse / Spring Tool Suite**
 
-3️⃣ Configure Database (application.properties)
+### 3️⃣ Configure Database (application.properties)
 
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database  
-spring.datasource.username=your_username  
-spring.datasource.password=your_password  
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+```
 
-4️⃣ Configure Mail (Required for Email Feature)
+### 4️⃣ Configure Mail (Required for Email Feature)
 
-spring.mail.host=smtp.gmail.com  
-spring.mail.port=587  
-spring.mail.username=your_email@gmail.com  
-spring.mail.password=your_app_password  
+```
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your_email@gmail.com
+spring.mail.password=your_app_password
+```
 
-⚠ Use Gmail App Password (NOT normal password)
+⚠ **Use Gmail App Password (NOT normal password)**
 
-5️⃣ Run Application  
+### 5️⃣ Run Application
 
-Run Spring Boot main class
+Run the **Spring Boot main class**
 
-6️⃣ Access Application  
+### 6️⃣ Access Application
 
+```
 http://localhost:8080/
+```
+
 
 ------------------------------------------------------------
 
