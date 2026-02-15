@@ -1,6 +1,8 @@
 package com.lb.util;
 
 import java.awt.Color;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +26,10 @@ public class PdfGenerator {
 	@Autowired
 	private CitizenRepo citizenRepo;
 
-	public void pdfGenerator(HttpServletResponse response, List<CitizenReports> plans) throws Exception {
+	public void pdfGenerator(HttpServletResponse response, List<CitizenReports> plans,File f) throws Exception {
 		Document document = new Document(PageSize.A4);
 		PdfWriter.getInstance(document, response.getOutputStream());
+		PdfWriter.getInstance(document,new FileOutputStream(f));
 		document.open();
 		Font font = FontFactory.getFont(FontFactory.HELVETICA_BOLD);
 		font.setSize(18);
