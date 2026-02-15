@@ -2,11 +2,21 @@
 
 Citizen Reports App is a Spring Boot MVC web application that provides dynamic search and reporting capabilities for citizen plan data.
 
-This project is primarily focused on backend development. It demonstrates how data is inserted into the database using a Runner class, how dropdown values are dynamically loaded from the database, and how multi-criteria dynamic search is implemented using Spring Boot and JPA.
+🔹 Backend-Focused Implementation  
+• Data initialization using Spring Boot Runner class  
+• Database-driven dropdown filters (no hardcoded values)  
+• Multi-criteria dynamic search using Spring Data JPA  
 
-The application also showcases report generation features, including exporting data to Excel (using Apache POI) and PDF (using OpenPDF), along with sending generated files as email attachments.
+🔹 Reporting Features  
+• Excel export using Apache POI  
+• PDF export using OpenPDF  
+• Emailing generated reports as attachments  
 
-A minimal frontend is used only for basic user interaction, such as displaying dropdowns, performing searches, and triggering Excel/PDF exports.
+🔹 Frontend Approach  
+• Minimal UI for basic interaction and clarity  
+• Dropdown selection, search, and export actions  
+
+This project emphasizes backend architecture, data handling, and report generation workflows while keeping the frontend intentionally simple.
 
 ------------------------------------------------------------
 
