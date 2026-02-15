@@ -1,14 +1,12 @@
 # 🚀 Citizen Reports App – Spring Boot Project ✨
 
-Citizen Reports App is a Spring Boot MVC web application designed to demonstrate backend-driven data processing and reporting workflows.
+Citizen Reports App is a Spring Boot MVC web application that provides dynamic search and reporting capabilities for citizen plan data.  
+This project is strongly focused on backend development and demonstrates real-world enterprise concepts such as database-driven UI components, dynamic search, report generation, and email integration.
 
-The application loads dropdown filter values dynamically from the MySQL database, ensuring that no business data is hardcoded. Users can perform multi-criteria searches, and results are fetched in real time using Spring Data JPA.
+------------------------------------------------------------
 
-The system supports exporting filtered records into Excel (via Apache POI) and PDF (via OpenPDF). Generated reports are streamed to the browser for download and can also be sent as email attachments using Spring Boot Mail.
+🚀 Features
 
-This project primarily highlights backend concepts including database interaction, dynamic query construction, report generation, and email integration, while using a minimal frontend only for user interaction.
-
-🚀 Features  
 🔹 Database-driven dropdown filters (no hardcoded values)  
 🔹 Multi-criteria dynamic search using Spring Data JPA  
 🔹 Instant result rendering  
@@ -17,21 +15,32 @@ This project primarily highlights backend concepts including database interactio
 🔹 Email Reports 📧 (Spring Boot Mail)  
 🔹 Clean Layered MVC Architecture  
 
-🖥️ Tech Stack  
+------------------------------------------------------------
+
+🖥️ Tech Stack
 
 Backend  
-🚀 Spring Boot ⚙️ Spring MVC 🗄️ Spring Data JPA ☕ Java  
+🔹 Java  
+🔹 Spring Boot  
+🔹 Spring MVC  
+🔹 Spring Data JPA  
 
 Database  
-🛢️ MySQL  
+🔹 MySQL  
 
 Reporting & Utilities  
-📊 Apache POI 📄 OpenPDF 📧 Spring Boot Mail  
+🔹 Apache POI (Excel Generation)  
+🔹 OpenPDF (PDF Generation)  
+🔹 Spring Boot Mail (Email Integration)
 
 View Layer  
-🖥️ JSP 🎯 JSTL 🎨 Bootstrap  
+🔹 JSP  
+🔹 JSTL  
+🔹 Bootstrap  
 
-📂 Project Structure  
+------------------------------------------------------------
+
+📂 Project Structure
 
 Reports_App/  
 │  
@@ -43,11 +52,15 @@ Reports_App/
 ├── util/  
 └── runner/  
 
-⚙️ Application Workflow  
+------------------------------------------------------------
+
+⚙️ Application Workflow
 
 Runner Class → Database Initialization → Dropdown Values from DB → User Search Filters → Dynamic Results → Excel / PDF Export → Email Delivery
 
-📸 Application Preview  
+------------------------------------------------------------
+
+📸 Application Preview
 
 🖥 Front Page  
 ![Front Page](frontpage.jpeg)
@@ -58,7 +71,9 @@ Runner Class → Database Initialization → Dropdown Values from DB → User Se
 📧 Email Report Preview  
 ![Mail Preview](mail.png)
 
-⚙️ Setup Instructions  
+------------------------------------------------------------
+
+⚙️ Setup Instructions
 
 1️⃣ Clone Repository  
 
@@ -66,7 +81,7 @@ git clone <your_repo_url>
 
 2️⃣ Open Project  
 
-Import into IntelliJ IDEA / Eclipse / STS
+Import into IntelliJ IDEA / Eclipse / Spring Tool Suite
 
 3️⃣ Configure Database (application.properties)
 
@@ -91,7 +106,9 @@ Run Spring Boot main class
 
 http://localhost:8080/
 
-🎯 Key Learning Highlights  
+------------------------------------------------------------
+
+🎯 Key Learning Highlights
 
 🔹 Database-driven UI design  
 🔹 Dynamic search with Spring Data JPA  
@@ -99,7 +116,9 @@ http://localhost:8080/
 🔹 Email integration with attachments  
 🔹 Clean enterprise project structure  
 
-👨‍💻 Author  
+------------------------------------------------------------
+
+👨‍💻 Author
 
 Pinku Prusty ✨  
 ☕ Java Developer  
