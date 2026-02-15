@@ -81,7 +81,7 @@ Runner Class → Database Initialization → Dropdown Values from DB → User Se
 ### 1️⃣ Clone Repository
 
 ```
-git clone <your_repo_url>
+git clone https://github.com/Pinkuu108/Citizen_Reports_App.git
 ```
 
 ### 2️⃣ Open Project
