@@ -5,6 +5,19 @@ The application uses database-driven dropdown filters (no hardcoded values) to e
 
 ------------------------------------------------------------
 
+📸 APPLICATION PREVIEW
+
+### 🖥 Front Page
+![Front Page](frontpage.jpeg)
+
+### 🔎 Dynamic Search Result
+![Dynamic Search](dynamic_search.png)
+
+### 📊 Records View
+![Records View](normal.png)
+
+------------------------------------------------------------
+
 🚀 FEATURES
 
 ✔ Database-driven dropdown filters  
