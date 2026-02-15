@@ -2,21 +2,59 @@
 
 Citizen Reports App is a Spring Boot MVC web application that provides dynamic search and reporting capabilities for citizen plan data.
 
-🔹 Backend-Focused Implementation  
-• Data initialization using Spring Boot Runner class  
-• Database-driven dropdown filters (no hardcoded values)  
-• Multi-criteria dynamic search using Spring Data JPA  
+This project is strongly focused on backend development and demonstrates real-world enterprise concepts such as database-driven UI components, dynamic search, report generation, and email integration.
 
-🔹 Reporting Features  
-• Excel export using Apache POI  
-• PDF export using OpenPDF  
-• Emailing generated reports as attachments  
+------------------------------------------------------------
 
-🔹 Frontend Approach  
-• Minimal UI for basic interaction and clarity  
-• Dropdown selection, search, and export actions  
+🚀 FEATURES
 
-This project emphasizes backend architecture, data handling, and report generation workflows while keeping the frontend intentionally simple.
+✅ Database-driven dropdown filters (no hardcoded values)  
+✅ Multi-criteria dynamic search using Spring Data JPA  
+✅ Instant result rendering  
+✅ Excel export using Apache POI 📊  
+✅ PDF export using OpenPDF 📄  
+✅ Emailing generated reports as attachments 📧  
+✅ Clean layered architecture (MVC)
+
+------------------------------------------------------------
+
+🏗️ APPLICATION WORKFLOW
+
+Data Initialization (Runner Class)  
+↓  
+Data Stored in MySQL Database  
+↓  
+Dropdown Values Loaded Dynamically  
+↓  
+User-driven Search Filters  
+↓  
+Dynamic Result Processing  
+↓  
+Export to Excel / PDF  
+↓  
+Email Report Delivery
+
+------------------------------------------------------------
+
+🖥️ TECH STACK
+
+Backend  
+🔹 Java  
+🔹 Spring Boot  
+🔹 Spring MVC  
+🔹 Spring Data JPA  
+
+Database  
+🔹 MySQL  
+
+Reporting  
+🔹 Apache POI (Excel Generation)  
+🔹 OpenPDF (PDF Generation)
+
+View Layer  
+🔹 JSP  
+🔹 JSTL  
+🔹 Bootstrap
 
 ------------------------------------------------------------
 
@@ -33,40 +71,7 @@ This project emphasizes backend architecture, data handling, and report generati
 
 ------------------------------------------------------------
 
-🌟 FEATURES
-
-✨ Database-driven dropdown filters  
-✨ Dynamic multi-criteria search  
-✨ Instant result display  
-✨ PDF report generation 📄  
-✨ Excel report generation 📊  
-✨ Email integration 📧  
-✨ Clean layered architecture (MVC)
-
-------------------------------------------------------------
-
-🛠 TECH STACK
-
-Backend  
-🔹 Java  
-🔹 Spring Boot  
-🔹 Spring MVC  
-🔹 Spring Data JPA  
-
-Database  
-🔹 MySQL  
-
-Reporting  
-🔹 Apache POI (Excel)  
-🔹 OpenPDF (PDF)
-
-View Layer  
-🔹 JSP  
-🔹 JSTL  
-
-------------------------------------------------------------
-
-📥 HOW TO CLONE & RUN THE PROJECT
+⚙️ HOW TO RUN THE PROJECT
 
 1️⃣ Clone Repository
 
@@ -78,7 +83,7 @@ Import into IntelliJ IDEA / Eclipse / Spring Tool Suite
 
 3️⃣ Configure Database
 
-Update src/main/resources/application.properties
+Update **src/main/resources/application.properties**
 
 Example:
 
@@ -99,7 +104,7 @@ spring.mail.password=your_app_password
 
 Run the Spring Boot main class
 
-6️⃣ Access in Browser
+6️⃣ Access Application
 
 http://localhost:8080/
 
@@ -107,27 +112,27 @@ http://localhost:8080/
 
 📦 REQUIRED DEPENDENCIES
 
-🔹 spring-boot-starter-web  
-🔹 spring-boot-starter-data-jpa  
-🔹 spring-boot-starter-mail  
-🔹 mysql-connector-j  
-🔹 poi-ooxml (Excel Export)  
-🔹 openpdf (PDF Export)  
-🔹 tomcat-embed-jasper (JSP Support)  
-🔹 jakarta.servlet.jsp.jstl (JSTL Support)  
-🔹 lombok (Optional)
+✔ spring-boot-starter-web  
+✔ spring-boot-starter-data-jpa  
+✔ spring-boot-starter-mail  
+✔ mysql-connector-j  
+✔ poi-ooxml (Excel Export)  
+✔ openpdf (PDF Export)  
+✔ tomcat-embed-jasper (JSP Support)  
+✔ jakarta.servlet.jsp.jstl (JSTL Support)  
+✔ lombok (Optional)
 
 ------------------------------------------------------------
 
 🎯 PROJECT PURPOSE
 
-This project demonstrates:
+This project demonstrates practical Spring Boot development concepts:
 
 🚀 Spring Boot MVC Architecture  
 🚀 Database-driven UI design  
 🚀 Dynamic search using JPA  
 🚀 Report generation (PDF & Excel)  
-🚀 Email sending with Spring Boot  
+🚀 Email integration using Spring Boot  
 🚀 Clean enterprise application structure
 
 ------------------------------------------------------------
