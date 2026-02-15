@@ -1,112 +1,113 @@
+# 🏛 Citizen Reports App – Spring Boot Project
 
-# Citizen Reports App – Spring Boot Project
+Citizen Reports App is a Spring Boot MVC web application that provides dynamic search and reporting capabilities for citizen plan data.  
+The application uses database-driven dropdown filters (no hardcoded values) to ensure flexibility and scalability. Users can perform multi-criteria searches, view results instantly, export reports to PDF & Excel, and send reports via email.
 
-## 📌 Project Overview  
-Citizen Reports App is a Spring Boot web application that provides **dynamic search and reporting features** for citizen plan data.  
-It allows users to filter records using **database-driven criteria** and export results into **PDF and Excel** formats.
+------------------------------------------------------------
 
----
+🚀 FEATURES
 
-## 🚀 Features  
+✔ Database-driven dropdown filters  
+✔ Dynamic multi-criteria search  
+✔ Instant result display  
+✔ PDF report generation 📄  
+✔ Excel report generation 📊  
+✔ Email integration 📧  
+✔ Clean layered architecture (MVC)
 
-✅ Dynamic search with multiple filters  
-✅ Database-driven results  
-✅ Export reports to PDF  
-✅ Export reports to Excel  
-✅ Clean MVC architecture  
-✅ Responsive UI  
+------------------------------------------------------------
 
----
+🛠 TECH STACK
 
-## 🛠 Tech Stack  
-
-### **Backend**
+Backend  
 - Java  
 - Spring Boot  
 - Spring MVC  
 - Spring Data JPA  
 
-### **Database**
+Database  
 - MySQL  
 
-### **Reporting & Utilities**
-- Apache POI (Excel Export)  
-- PDF Export  
+Reporting  
+- Apache POI (Excel)  
+- OpenPDF (PDF)
 
----
+View Layer  
+- JSP  
+- JSTL  
 
-## 📂 Project Structure  
+------------------------------------------------------------
 
-```
+📥 HOW TO CLONE & RUN THE PROJECT
 
-src/main/java/com/yourpackage/
-├── controller
-├── service
-├── repository
-├── entity
-├── dto
+1️⃣ Clone Repository
 
-````
-
----
-
-## ⚙️ How to Run the Project  
-
-### 1️⃣ Clone the repository  
-
-```bash
 git clone <your_repo_url>
-````
 
-### 2️⃣ Open the project
+2️⃣ Open Project
 
-Open in **IntelliJ IDEA / Eclipse**
+Import into IntelliJ IDEA / Eclipse / Spring Tool Suite
 
----
+3️⃣ Configure Database
 
-### 3️⃣ Configure Database
+Update src/main/resources/application.properties
 
-Update `application.properties` or `application.yml`:
+Example:
 
-```
-spring.datasource.url=jdbc:mysql://localhost:3306/JRTP
-spring.datasource.username=root
-spring.datasource.password=your_password
-```
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database  
+spring.datasource.username=your_username  
+spring.datasource.password=your_password  
 
----
+4️⃣ Configure Mail (Required for Email Feature)
 
-### 4️⃣ Run the Application
+spring.mail.host=smtp.gmail.com  
+spring.mail.port=587  
+spring.mail.username=your_email@gmail.com  
+spring.mail.password=your_app_password  
 
-Run the Spring Boot **main class**
+⚠ Use Gmail App Password (NOT normal password)
 
----
+5️⃣ Run Application
 
-### 5️⃣ Open in Browser
+Run the Spring Boot main class
 
-```
+6️⃣ Access in Browser
+
 http://localhost:8080/
-```
 
----
+------------------------------------------------------------
 
-## 🎯 Purpose of the Project
+📦 REQUIRED DEPENDENCIES
+
+✔ spring-boot-starter-web  
+✔ spring-boot-starter-data-jpa  
+✔ spring-boot-starter-mail  
+✔ mysql-connector-j  
+✔ poi-ooxml (Excel Export)  
+✔ openpdf (PDF Export)  
+✔ tomcat-embed-jasper (JSP Support)  
+✔ jakarta.servlet.jsp.jstl (JSTL Support)  
+✔ lombok (Optional)
+
+------------------------------------------------------------
+
+🎯 PROJECT PURPOSE
 
 This project demonstrates:
 
-* Spring Boot MVC workflow
-* Dynamic search using Spring Data JPA
-* PDF & Excel report generation
-* Clean layered architecture
+✔ Spring Boot MVC Architecture  
+✔ Database-driven UI design  
+✔ Dynamic search using JPA  
+✔ Report generation (PDF & Excel)  
+✔ Email sending with Spring Boot  
+✔ Clean enterprise application structure
 
----
+------------------------------------------------------------
 
----
+👨‍💻 AUTHOR
 
-## 👨‍💻 Author  
+Pinku Prusty  
+Java Developer ☕
 
-**Pinku**  
-Java Developer  
-
-🔗 **LinkedIn:** https://www.linkedin.com/in/pinkuna-prusty-55b487273/  
-📧 **Email:** pinkunaprusty108@gmail.com
+LinkedIn: https://www.linkedin.com/in/pinkuna-prusty-55b487273/  
+Email: pinkunaprusty108@gmail.com
