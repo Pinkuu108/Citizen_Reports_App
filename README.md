@@ -3,7 +3,7 @@
 Citizen Reports App is a Spring Boot MVC web application that provides dynamic search and reporting capabilities for citizen plan data.  
 This project is strongly focused on backend development and demonstrates real-world enterprise concepts such as database-driven UI components, dynamic search, report generation, export to Excel and PDF, and email integration.
 
-------------------------------------------------------------
+-----------------------------------------------------------
 
 🚀 Features
 
